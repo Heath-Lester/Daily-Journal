@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <header>
+    <header id="journalHeader">
         <h1>Daily Journal</h1>
         <h2>${username}</h2>
     </header>
@@ -30,7 +30,7 @@
         <section class="mainContent">
             <article class="postViewer">
                 <div class="mainPostCard">
-                    <header>
+                    <header class="mainPostCard__details">
                         <span>
                             <h4>Date:Concept:Mood</h4>
                         </span>
@@ -43,7 +43,7 @@
             </article>
             <form class="entryForm" action="">
                 <fieldset class="postDetails">
-                    <label for="journalDate">Date of entry</label>
+                    <label for="journalDate">Date</label>
                     <input type="date" name="journalDate" id="journalDate">
                     <label for="conceptsCovered">Concepts Covered</label>
                     <input type="text" name="conceptsCovered" id="conceptsCovered">
