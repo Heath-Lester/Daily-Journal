@@ -1,33 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Daily Journal</title>
     <link rel="stylesheet" href="styles/main.css">
 </head>
+
 <body>
     <header>
-        <h1>DailyJournal</h1>
+        <h1>Daily Journal</h1>
         <h2>${username}</h2>
     </header>
     <main>
         <aside class="macroSelect">
+            <header>
+                <h4>Month Select</h4>
+            </header>
             <div class="monthCard">
-                <button class="monthCard__Button">Week 1</button>
+                <!-- Still need to flesh out. Probably a better way to do this -->
+                <!-- <button class="monthCard__Button">Week 1</button>
                 <button class="monthCard__Button">Week 2</button>
                 <button class="monthCard__Button">Week 3</button>
                 <button class="monthCard__Button">Week 4</button>
-                <button class="monthCard__Button">Week 5</button>
+                <button class="monthCard__Button">Week 5</button> -->
             </div>
         </aside>
-        <section class="mainView"></section>
-        <aside class="quickScroll"></aside>
+        <section class="mainContent">
+            <article class="postViewer">
+                <div class="mainPostCard">
+                    <header>
+                        <span>
+                            <h4>Date:Concept:Mood</h4>
+                        </span>
+                        <button>
+                            <h4>Edit/Delete</h4>
+                        </button>
+                    </header>
+                    <textarea>Post Content Placeholder</textarea>
+                </div>
+            </article>
+            <form class="entryForm" action="">
+                <fieldset class="postDetails">
+                    <label for="journalDate">Date of entry</label>
+                    <input type="date" name="journalDate" id="journalDate">
+                    <label for="conceptsCovered">Concepts Covered</label>
+                    <input type="text" name="conceptsCovered" id="conceptsCovered">
+                    <label for="mood">Mood</label>
+                    <select id="mood">
+                        <option value="excited">Excited</option>
+                        <option value="hopeful">Hopeful</option>
+                        <option value="confused">Confused</option>
+                        <option value="frustrated">Frustrated</option>
+                        <option value="anxious">Anxious</option>
+                        <option value="despair">Despair</option>
+                        <option value="jubilation">Jubilation</option>
+                        <option value="proud">Proud</option>
+                        <option value="grateful">Grateful</option>
+                    </select>
+                    <fieldset class="journalEntry">
+                        <label for="postContent">Journal Entry</label>
+                        <textarea></textarea>
+                    </fieldset>
+                </fieldset>
+
+            </form>
+        </section>
+        <aside class="microSelect">
+            <header>
+                <h4>Quick Select</h4>
+            </header>
+            <div class="microPostCard">
+                <div class="microPostCard__date"></div>
+                <div class="microPostCard__concept"></div>
+                <div class="microPostCard__mood"></div>
+                <summary>
+                    <h6>Grayed out first words here.</h6>
+                </summary>
+            </div>
+        </aside>
     </main>
     <footer>
-        <a href="https://github.com/Heath-Lester"><h5>GitHub</h5></a>
+        <a href="https://github.com/Heath-Lester">
+            <h5>GitHub</h5>
+        </a>
         <h6>&#169 Copyright 2020</h6>
     </footer>
     <script src="/scripts/main.js"></script>
 </body>
+
 </html>
