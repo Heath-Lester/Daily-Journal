@@ -22,7 +22,7 @@ header{
 }
 
 .mainContent {
-    display:flex;
+    display: flex;
     flex-flow: column nowrap;
     flex-basis: 60%;
     border: red dotted 3px;
@@ -35,6 +35,10 @@ header{
 
 .entryForm {
     border: brown solid 3px;
+}
+
+.postDetails {
+    
 }
 
 .microSelect {
