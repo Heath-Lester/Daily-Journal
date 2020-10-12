@@ -1,0 +1,49 @@
+@import "/styles/mainPostCard.css";
+@import "/styles/microPostCard.css";
+@import "/styles/monthCard.css";
+
+#journalHeader {
+    text-align: center;
+    background: darkkhaki;
+}
+
+main {
+    display: flex;
+}
+
+header{
+    text-align: center;
+}
+
+.macroSelect {
+    flex-basis: 20%;
+    border: purple solid 3px;
+    min-width: 100px;
+}
+
+.mainContent {
+    display:flex;
+    flex-flow: column nowrap;
+    flex-basis: 60%;
+    border: red dotted 3px;
+    min-width: 655px;
+}
+
+.postViewer {
+    border: darkseagreen solid 3px;
+}
+
+.entryForm {
+    border: brown solid 3px;
+}
+
+.microSelect {
+    flex-basis: 20%;
+    border: orange dotted 3px;
+    min-width: 100px;
+}
+
+footer {
+    text-align: center;
+    background: lightblue;
+}

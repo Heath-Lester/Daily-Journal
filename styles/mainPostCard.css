@@ -1,0 +1,8 @@
+.mainPostCard {
+   border: darkkhaki dotted 3px;
+}
+
+.mainPostCard__details {
+    display: flex;
+    justify-content: space-between;
+}
