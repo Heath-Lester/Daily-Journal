@@ -30,6 +30,8 @@ header{
 }
 
 .postViewer {
+    display:flex;
+    flex-flow: column-reverse nowrap;
     border: darkseagreen solid 3px;
 }
 
